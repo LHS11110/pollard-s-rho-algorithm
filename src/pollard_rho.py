@@ -82,6 +82,7 @@ def factorize(n):
             continue
         
         factor = pollard_rho(current)
+        
         queue.append(factor)
         queue.append(current // factor)
     
